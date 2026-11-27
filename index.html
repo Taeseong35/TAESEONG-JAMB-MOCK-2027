@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TAESEONG JAMB MOCK 2027</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#07152e;color:white}
+header{background:#0b1f42;padding:25px 15px;text-align:center;border-bottom:3px solid #d4af37}
+h1{color:#d4af37;font-size:25px}
+main{max-width:650px;margin:35px auto;padding:20px}
+.card{background:#10264b;padding:25px;border-radius:14px;text-align:center}
+button{background:#d4af37;color:#07152e;border:0;padding:14px 25px;border-radius:8px;font-weight:bold;font-size:16px}
+input{padding:13px;width:100%;margin:12px 0;border-radius:7px;border:0}
+</style>
+</head>
+<body>
+<header>
+<h1>TAESEONG JAMB MOCK 2027</h1>
+<p>Excellence Through Preparation</p>
+</header>
+<main>
+<div class="card">
+<h2>Welcome, Candidate!</h2>
+<p>Prepare for your JAMB UTME 2027 examination.</p>
+<input id="candidate" placeholder="Enter your full name">
+<button onclick="start()">START MOCK EXAM</button>
+</div>
+</main>
+<script>
+function start(){
+let name=document.getElementById('candidate').value.trim();
+if(!name){alert('Please enter your name');return;}
+alert('Welcome '+name+'! Your mock examination is coming soon.');
+}
+</script>
+</body>
+</html>
